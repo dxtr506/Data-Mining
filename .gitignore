@@ -15,14 +15,12 @@ Thumbs.db
 elemove/
 # Dữ liệu GPS Movebank (42 MB). Bỏ dòng này nếu đã kiểm tra giấy phép và muốn đưa lên repo.
 ThermochronTracking Elephants Kruger 2007.csv
-# Bản đồ cây gỗ của tác giả: do 00_get_treecover.py tự tải về và kiểm tra checksum
+# Bản đồ cây gỗ của tác giả và file ghi nguồn của nó: do 00_get_treecover.py tự tạo
 elephant_dt/data/woody_author_interpolated.tif
+elephant_dt/data/woody_source.json
 
-# ---------- Kết quả trung gian, tạo lại bằng elephant_dt/run_all.py (khoảng 1 phút) ----------
-# Giữ lại các báo cáo .md, .json, .png và segments.csv (nhỏ, đọc được ngay trên GitHub)
-elephant_dt/outputs/*.parquet
-elephant_dt/outputs/gps_with_woody.csv
-elephant_dt/outputs/matplotlib_cache/
+# ---------- Kết quả trung gian và báo cáo, tạo lại bằng elephant_dt/run_all.py (khoảng 4–5 phút) ----------
+elephant_dt/outputs/
 
 # ---------- File cá nhân, không thuộc dự án ----------
 feedbacks_paper.txt
