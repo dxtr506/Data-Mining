@@ -10,7 +10,7 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# ---------- Dữ liệu và kho của người khác: mỗi người tự tải (xem elephant_dt/README.md, mục 11) ----------
+# ---------- Dữ liệu và kho của người khác: mỗi người tự tải (xem README.md, mục 12) ----------
 # Kho code và dữ liệu của tác giả paper: git clone https://github.com/pratikunterwegs/elemove
 elemove/
 # Dữ liệu GPS Movebank (42 MB). Bỏ dòng này nếu đã kiểm tra giấy phép và muốn đưa lên repo.
