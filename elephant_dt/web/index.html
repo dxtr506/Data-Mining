@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Voi Kruger · Nghỉ và quay lại nước</title>
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loading"><div class="load-ico" id="loadIco"></div><span>Đang tải…</span></div>
+
+<div id="map"></div>
+
+<!-- Góc trên trái: tên + chọn cây -->
+<div class="ui top-left">
+  <div class="brand"><span class="brand-ico" id="brandIco"></span>Voi Kruger<span class="brand-sub">dự đoán bằng cây quyết định</span></div>
+  <div class="seg" id="taskSwitch" role="tablist" aria-label="Chọn câu hỏi">
+    <button data-task="rest" class="on" title="Trong 90 phút tới voi nghỉ hay di chuyển? (phím 1)">Nghỉ</button>
+    <button data-task="water" title="Voi ở xa nước có quay lại vùng nước trong 3 giờ tới không? (phím 2)">Về nước</button>
+    <button data-task="speed" title="Ban ngày, khi voi đi, đi nhanh hay chậm? (phím 3)">Tốc độ</button>
+    <button data-task="stay" title="Voi trong vùng nước ở lại hay rời đi? (phím 4)">Ở nước</button>
+  </div>
+</div>
+
+<!-- Góc trên phải: mở bảng phụ -->
+<div class="ui top-right">
+  <button class="tool" data-open="elephants" title="Chọn voi hiện trên bản đồ"><i data-ico="target"></i><span>Voi</span></button>
+  <button class="tool" data-open="pattern" title="Pattern cây tìm ra và bằng chứng"><i data-ico="chart"></i><span>Pattern</span></button>
+  <button class="tool" data-open="rules" title="Các luật của cây"><i data-ico="rules"></i><span>Luật</span></button>
+  <button class="tool" data-open="tree" title="Sơ đồ cây"><i data-ico="tree"></i><span>Cây</span></button>
+  <span class="tool-sep"></span>
+  <button class="tool" data-act="present" title="Kiểm tra pattern trên năm 2009 (phím P)"><i data-ico="present"></i><span>Kiểm tra</span></button>
+  <button class="tool" data-act="full" title="Toàn màn hình (phím F)"><i data-ico="full"></i></button>
+</div>
+
+<aside class="ui check" id="check" hidden></aside>
+<aside class="ui card" id="card" hidden></aside>
+<div class="ui legend" id="legend"></div>
+
+<!-- Thanh thời gian -->
+<div class="ui timeline">
+  <div class="hint-toast" id="hint"><i data-ico="play"></i> chạy · bấm vào <span class="mini-ele" id="hintEle"></span> để xem dự đoán và thực tế</div>
+  <div class="tl-row">
+    <button id="playBtn" class="play" aria-label="Phát"><i data-ico="play"></i></button>
+    <div class="clock">
+      <span class="date" id="clockDate">—</span>
+      <span class="chip-ico" id="seasonChip"></span>
+      <span class="chip-ico" id="dayChip"></span>
+    </div>
+    <button id="speedBtn" class="speed" title="Tốc độ phát">1×</button>
+  </div>
+  <div class="slider-wrap">
+    <div id="seasonBar"></div>
+    <input type="range" id="timeSlider" min="0" max="1" step="30" value="0" aria-label="Thời gian">
+  </div>
+</div>
+
+<aside class="ui drawer" id="drawer" hidden>
+  <header><h2 id="drawerTitle"></h2><button class="icon-btn" id="drawerClose" aria-label="Đóng"><i data-ico="close"></i></button></header>
+  <div id="drawerBody"></div>
+</aside>
+
+<div id="treeModal" hidden>
+  <div class="box">
+    <header><div class="seg" id="treeTabs" role="tablist" aria-label="Chọn cây"></div><h2 id="treeModalTitle">Cây quyết định</h2><button class="btn" id="treeZoom" title="Chuyển giữa chữ lớn (cuộn dọc) và toàn cảnh">Xem toàn cảnh</button><button class="icon-btn" id="treeModalClose" aria-label="Đóng"><i data-ico="close"></i></button></header>
+    <div id="treeNote" class="tree-note"></div>
+    <div id="treeModalBody"><div id="treeDiagram"></div></div>
+  </div>
+</div>
+<div id="tooltip" class="tooltip" hidden></div>
+
+<script src="vendor/maplibre-gl.js"></script>
+<script src="vendor/deck.gl.min.js"></script>
+<script src="data/layers.js"></script>
+<script src="data/tracks.js"></script>
+<script src="data/tasks.js"></script>
+<script src="charts.js"></script>
+<script src="tasks_app.js"></script>
+</body>
+</html>

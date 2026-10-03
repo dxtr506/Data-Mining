@@ -1,0 +1,2443 @@
+{
+  "tasks": {
+    "rest": {
+      "title": "Nghỉ hay di chuyển?",
+      "classes": [
+        "Nghỉ (ít di chuyển)",
+        "Di chuyển"
+      ],
+      "params": {
+        "max_depth": 3,
+        "min_samples_leaf": 250,
+        "ccp_alpha": 0.001
+      },
+      "leaves": 6,
+      "grid": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 7,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 6,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 7,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 6,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 6,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 6,
+          "val_acc": 0.7921,
+          "val_bal_acc": 0.7081,
+          "val_macro_f1": 0.6101
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 11,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 12,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 10,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 12,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 11,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 9,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 27,
+          "val_acc": 0.7681,
+          "val_bal_acc": 0.7191,
+          "val_macro_f1": 0.5989
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 19,
+          "val_acc": 0.7681,
+          "val_bal_acc": 0.7191,
+          "val_macro_f1": 0.5989
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 15,
+          "val_acc": 0.7866,
+          "val_bal_acc": 0.7179,
+          "val_macro_f1": 0.6103
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 11,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 22,
+          "val_acc": 0.763,
+          "val_bal_acc": 0.7194,
+          "val_macro_f1": 0.5957
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 16,
+          "val_acc": 0.7474,
+          "val_bal_acc": 0.7195,
+          "val_macro_f1": 0.5862
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 13,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 11,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 11,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 10,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 43,
+          "val_acc": 0.7624,
+          "val_bal_acc": 0.72,
+          "val_macro_f1": 0.5956
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 26,
+          "val_acc": 0.7507,
+          "val_bal_acc": 0.7218,
+          "val_macro_f1": 0.589
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 18,
+          "val_acc": 0.7866,
+          "val_bal_acc": 0.7179,
+          "val_macro_f1": 0.6103
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 13,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 27,
+          "val_acc": 0.7448,
+          "val_bal_acc": 0.7179,
+          "val_macro_f1": 0.5841
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 21,
+          "val_acc": 0.7292,
+          "val_bal_acc": 0.718,
+          "val_macro_f1": 0.5749
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 16,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 13,
+          "val_acc": 0.7659,
+          "val_bal_acc": 0.7183,
+          "val_macro_f1": 0.5972
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 18,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 16,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 14,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 12,
+          "val_acc": 0.7652,
+          "val_bal_acc": 0.717,
+          "val_macro_f1": 0.5963
+        }
+      ],
+      "n": {
+        "fit": 37206,
+        "val": 22001,
+        "2009": 16517
+      },
+      "share": {
+        "fit": [
+          0.0733,
+          0.9267
+        ],
+        "val": [
+          0.0899,
+          0.9101
+        ],
+        "2009": [
+          0.0672,
+          0.9328
+        ]
+      },
+      "val": {
+        "acc": 0.7921,
+        "bal_acc": 0.7081,
+        "macro_f1": 0.6101
+      },
+      "2009": {
+        "acc": 0.8024,
+        "bal_acc": 0.7541,
+        "macro_f1": 0.6032
+      },
+      "baselines": {
+        "val": {
+          "majority": {
+            "acc": 0.9101,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4765
+          }
+        },
+        "2009": {
+          "majority": {
+            "acc": 0.9328,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4826
+          }
+        }
+      },
+      "confusion_2009": [
+        [
+          775,
+          335
+        ],
+        [
+          2928,
+          12479
+        ]
+      ],
+      "ablation": [
+        {
+          "dropped": "Giờ",
+          "val": {
+            "acc": 0.6102,
+            "bal_acc": 0.6462,
+            "macro_f1": 0.4896
+          },
+          "2009": {
+            "acc": 0.625,
+            "bal_acc": 0.6941,
+            "macro_f1": 0.4853
+          }
+        },
+        {
+          "dropped": "Nhiệt độ",
+          "val": {
+            "acc": 0.7946,
+            "bal_acc": 0.7102,
+            "macro_f1": 0.6126
+          },
+          "2009": {
+            "acc": 0.8191,
+            "bal_acc": 0.7622,
+            "macro_f1": 0.6181
+          }
+        },
+        {
+          "dropped": "Mùa",
+          "val": {
+            "acc": 0.7921,
+            "bal_acc": 0.7081,
+            "macro_f1": 0.6101
+          },
+          "2009": {
+            "acc": 0.8024,
+            "bal_acc": 0.7541,
+            "macro_f1": 0.6032
+          }
+        },
+        {
+          "dropped": "Khoảng cách tới nước",
+          "val": {
+            "acc": 0.7921,
+            "bal_acc": 0.7081,
+            "macro_f1": 0.6101
+          },
+          "2009": {
+            "acc": 0.8024,
+            "bal_acc": 0.7541,
+            "macro_f1": 0.6032
+          }
+        },
+        {
+          "dropped": "Cây gỗ",
+          "val": {
+            "acc": 0.7921,
+            "bal_acc": 0.7081,
+            "macro_f1": 0.6101
+          },
+          "2009": {
+            "acc": 0.8024,
+            "bal_acc": 0.7541,
+            "macro_f1": 0.6032
+          }
+        },
+        {
+          "dropped": "Chất lượng GPS",
+          "val": {
+            "acc": 0.7921,
+            "bal_acc": 0.7081,
+            "macro_f1": 0.6101
+          },
+          "2009": {
+            "acc": 0.8024,
+            "bal_acc": 0.7541,
+            "macro_f1": 0.6032
+          }
+        }
+      ],
+      "permutation_val": {
+        "hour": 0.1385,
+        "temp": 0.0,
+        "wet": 0.0,
+        "dw_km": 0.0,
+        "woody": 0.0,
+        "woody_mean_300m": 0.0,
+        "temp_change_90": 0.0,
+        "temp_change_180": 0.0309,
+        "woody_missing": 0.0,
+        "fix_age_min": 0.0
+      },
+      "imputation_medians": {
+        "woody": 35.57822799682617,
+        "woody_mean_300m": 35.73996692233615,
+        "temp_change_180": -1.0,
+        "woody_missing": 0.0
+      },
+      "rules_stable": 2,
+      "rules_total": 6
+    },
+    "water": {
+      "title": "Có quay lại nước không?",
+      "classes": [
+        "Chưa về nước",
+        "Về nước trong 3 giờ"
+      ],
+      "params": {
+        "max_depth": 4,
+        "min_samples_leaf": 1000,
+        "ccp_alpha": 0.0
+      },
+      "leaves": 14,
+      "grid": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.6949,
+          "val_bal_acc": 0.7435,
+          "val_macro_f1": 0.6564
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.6949,
+          "val_bal_acc": 0.7435,
+          "val_macro_f1": 0.6564
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 8,
+          "val_acc": 0.6949,
+          "val_bal_acc": 0.7435,
+          "val_macro_f1": 0.6564
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6949,
+          "val_bal_acc": 0.7435,
+          "val_macro_f1": 0.6564
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.6897,
+          "val_bal_acc": 0.7426,
+          "val_macro_f1": 0.6526
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.6897,
+          "val_bal_acc": 0.7426,
+          "val_macro_f1": 0.6526
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 8,
+          "val_acc": 0.6897,
+          "val_bal_acc": 0.7426,
+          "val_macro_f1": 0.6526
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6897,
+          "val_bal_acc": 0.7426,
+          "val_macro_f1": 0.6526
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 7,
+          "val_acc": 0.7006,
+          "val_bal_acc": 0.7354,
+          "val_macro_f1": 0.6575
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 7,
+          "val_acc": 0.7006,
+          "val_bal_acc": 0.7354,
+          "val_macro_f1": 0.6575
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 7,
+          "val_acc": 0.7006,
+          "val_bal_acc": 0.7354,
+          "val_macro_f1": 0.6575
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.7006,
+          "val_bal_acc": 0.7354,
+          "val_macro_f1": 0.6575
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.7467,
+          "val_bal_acc": 0.7563,
+          "val_macro_f1": 0.6952
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 15,
+          "val_acc": 0.7467,
+          "val_bal_acc": 0.7563,
+          "val_macro_f1": 0.6952
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 15,
+          "val_acc": 0.7467,
+          "val_bal_acc": 0.7563,
+          "val_macro_f1": 0.6952
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 12,
+          "val_acc": 0.7316,
+          "val_bal_acc": 0.753,
+          "val_macro_f1": 0.6839
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 15,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 14,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 12,
+          "val_acc": 0.7264,
+          "val_bal_acc": 0.752,
+          "val_macro_f1": 0.6802
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 13,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 13,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 11,
+          "val_acc": 0.7373,
+          "val_bal_acc": 0.7448,
+          "val_macro_f1": 0.6848
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 29,
+          "val_acc": 0.7352,
+          "val_bal_acc": 0.7598,
+          "val_macro_f1": 0.6887
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 28,
+          "val_acc": 0.7352,
+          "val_bal_acc": 0.7598,
+          "val_macro_f1": 0.6887
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 25,
+          "val_acc": 0.7352,
+          "val_bal_acc": 0.7598,
+          "val_macro_f1": 0.6887
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 14,
+          "val_acc": 0.7316,
+          "val_bal_acc": 0.753,
+          "val_macro_f1": 0.6839
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 26,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 25,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 22,
+          "val_acc": 0.7415,
+          "val_bal_acc": 0.7554,
+          "val_macro_f1": 0.6914
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 14,
+          "val_acc": 0.7264,
+          "val_bal_acc": 0.752,
+          "val_macro_f1": 0.6802
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 20,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 19,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 16,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 12,
+          "val_acc": 0.7373,
+          "val_bal_acc": 0.7448,
+          "val_macro_f1": 0.6848
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 49,
+          "val_acc": 0.7099,
+          "val_bal_acc": 0.7576,
+          "val_macro_f1": 0.6708
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 41,
+          "val_acc": 0.7099,
+          "val_bal_acc": 0.7576,
+          "val_macro_f1": 0.6708
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 28,
+          "val_acc": 0.706,
+          "val_bal_acc": 0.754,
+          "val_macro_f1": 0.667
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 15,
+          "val_acc": 0.7024,
+          "val_bal_acc": 0.7471,
+          "val_macro_f1": 0.6625
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 39,
+          "val_acc": 0.7152,
+          "val_bal_acc": 0.7494,
+          "val_macro_f1": 0.6718
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 31,
+          "val_acc": 0.7152,
+          "val_bal_acc": 0.7494,
+          "val_macro_f1": 0.6718
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 25,
+          "val_acc": 0.7152,
+          "val_bal_acc": 0.7494,
+          "val_macro_f1": 0.6718
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 14,
+          "val_acc": 0.7264,
+          "val_bal_acc": 0.752,
+          "val_macro_f1": 0.6802
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 22,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 20,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 16,
+          "val_acc": 0.7559,
+          "val_bal_acc": 0.746,
+          "val_macro_f1": 0.6974
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 12,
+          "val_acc": 0.7373,
+          "val_bal_acc": 0.7448,
+          "val_macro_f1": 0.6848
+        }
+      ],
+      "n": {
+        "fit": 28877,
+        "val": 15430,
+        "2009": 12299
+      },
+      "share": {
+        "fit": [
+          0.7803,
+          0.2197
+        ],
+        "val": [
+          0.783,
+          0.217
+        ],
+        "2009": [
+          0.757,
+          0.243
+        ]
+      },
+      "val": {
+        "acc": 0.7559,
+        "bal_acc": 0.746,
+        "macro_f1": 0.6974
+      },
+      "2009": {
+        "acc": 0.7322,
+        "bal_acc": 0.738,
+        "macro_f1": 0.6902
+      },
+      "baselines": {
+        "val": {
+          "majority": {
+            "acc": 0.783,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4391
+          }
+        },
+        "2009": {
+          "majority": {
+            "acc": 0.757,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4308
+          }
+        }
+      },
+      "confusion_2009": [
+        [
+          6765,
+          2545
+        ],
+        [
+          749,
+          2240
+        ]
+      ],
+      "ablation": [
+        {
+          "dropped": "Giờ",
+          "val": {
+            "acc": 0.7145,
+            "bal_acc": 0.7403,
+            "macro_f1": 0.6683
+          },
+          "2009": {
+            "acc": 0.7275,
+            "bal_acc": 0.7271,
+            "macro_f1": 0.683
+          }
+        },
+        {
+          "dropped": "Nhiệt độ",
+          "val": {
+            "acc": 0.6969,
+            "bal_acc": 0.7339,
+            "macro_f1": 0.6546
+          },
+          "2009": {
+            "acc": 0.6927,
+            "bal_acc": 0.7338,
+            "macro_f1": 0.6629
+          }
+        },
+        {
+          "dropped": "Mùa",
+          "val": {
+            "acc": 0.7559,
+            "bal_acc": 0.746,
+            "macro_f1": 0.6974
+          },
+          "2009": {
+            "acc": 0.7322,
+            "bal_acc": 0.738,
+            "macro_f1": 0.6902
+          }
+        },
+        {
+          "dropped": "Khoảng cách tới nước",
+          "val": {
+            "acc": 0.5982,
+            "bal_acc": 0.652,
+            "macro_f1": 0.5656
+          },
+          "2009": {
+            "acc": 0.6087,
+            "bal_acc": 0.6526,
+            "macro_f1": 0.5826
+          }
+        },
+        {
+          "dropped": "Cây gỗ",
+          "val": {
+            "acc": 0.7559,
+            "bal_acc": 0.746,
+            "macro_f1": 0.6974
+          },
+          "2009": {
+            "acc": 0.7322,
+            "bal_acc": 0.738,
+            "macro_f1": 0.6902
+          }
+        },
+        {
+          "dropped": "Chất lượng GPS",
+          "val": {
+            "acc": 0.7559,
+            "bal_acc": 0.746,
+            "macro_f1": 0.6974
+          },
+          "2009": {
+            "acc": 0.7322,
+            "bal_acc": 0.738,
+            "macro_f1": 0.6902
+          }
+        },
+        {
+          "dropped": "Thời gian rời nước",
+          "val": {
+            "acc": 0.7373,
+            "bal_acc": 0.7448,
+            "macro_f1": 0.6848
+          },
+          "2009": {
+            "acc": 0.7322,
+            "bal_acc": 0.738,
+            "macro_f1": 0.6902
+          }
+        }
+      ],
+      "permutation_val": {
+        "hour": 0.0617,
+        "temp": 0.0,
+        "wet": 0.0,
+        "dw_km": 0.1632,
+        "woody": 0.0,
+        "woody_mean_300m": 0.0,
+        "temp_change_90": 0.0,
+        "temp_change_180": 0.0049,
+        "woody_missing": 0.0,
+        "fix_age_min": 0.0,
+        "hours_since_water": 0.0024
+      },
+      "imputation_medians": {
+        "woody": 35.28263473510742,
+        "woody_mean_300m": 35.804576237996415,
+        "temp_change_180": -1.0,
+        "woody_missing": 0.0
+      },
+      "rules_stable": 11,
+      "rules_total": 14
+    },
+    "speed": {
+      "title": "Đi nhanh hay chậm?",
+      "classes": [
+        "Đi chậm",
+        "Đi nhanh"
+      ],
+      "params": {
+        "max_depth": 5,
+        "min_samples_leaf": 1000,
+        "ccp_alpha": 0.0
+      },
+      "leaves": 17,
+      "grid": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 8,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 8,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 8,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 7,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 16,
+          "val_acc": 0.6436,
+          "val_bal_acc": 0.5605,
+          "val_macro_f1": 0.5546
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 16,
+          "val_acc": 0.6436,
+          "val_bal_acc": 0.5605,
+          "val_macro_f1": 0.5546
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 11,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 14,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 14,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 11,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 12,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 12,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 8,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 27,
+          "val_acc": 0.6299,
+          "val_bal_acc": 0.5662,
+          "val_macro_f1": 0.5663
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 24,
+          "val_acc": 0.6442,
+          "val_bal_acc": 0.566,
+          "val_macro_f1": 0.5626
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 14,
+          "val_acc": 0.6331,
+          "val_bal_acc": 0.5639,
+          "val_macro_f1": 0.5629
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 20,
+          "val_acc": 0.6292,
+          "val_bal_acc": 0.5814,
+          "val_macro_f1": 0.5827
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 18,
+          "val_acc": 0.6292,
+          "val_bal_acc": 0.5814,
+          "val_macro_f1": 0.5827
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 13,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 15,
+          "val_acc": 0.6125,
+          "val_bal_acc": 0.5723,
+          "val_macro_f1": 0.5727
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 10,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 36,
+          "val_acc": 0.6278,
+          "val_bal_acc": 0.5748,
+          "val_macro_f1": 0.5761
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 28,
+          "val_acc": 0.6389,
+          "val_bal_acc": 0.5763,
+          "val_macro_f1": 0.5771
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 14,
+          "val_acc": 0.6331,
+          "val_bal_acc": 0.5639,
+          "val_macro_f1": 0.5629
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 26,
+          "val_acc": 0.6292,
+          "val_bal_acc": 0.5814,
+          "val_macro_f1": 0.5827
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 20,
+          "val_acc": 0.6292,
+          "val_bal_acc": 0.5814,
+          "val_macro_f1": 0.5827
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 13,
+          "val_acc": 0.6324,
+          "val_bal_acc": 0.5584,
+          "val_macro_f1": 0.5557
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6054,
+          "val_bal_acc": 0.5576,
+          "val_macro_f1": 0.5583
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 16,
+          "val_acc": 0.6125,
+          "val_bal_acc": 0.5723,
+          "val_macro_f1": 0.5727
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.6131,
+          "val_bal_acc": 0.5592,
+          "val_macro_f1": 0.56
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 10,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.6,
+          "val_bal_acc": 0.5616,
+          "val_macro_f1": 0.5616
+        }
+      ],
+      "n": {
+        "fit": 18559,
+        "val": 10653,
+        "2009": 8107
+      },
+      "share": {
+        "fit": [
+          0.5,
+          0.5
+        ],
+        "val": [
+          0.6475,
+          0.3525
+        ],
+        "2009": [
+          0.5094,
+          0.4906
+        ]
+      },
+      "val": {
+        "acc": 0.6125,
+        "bal_acc": 0.5723,
+        "macro_f1": 0.5727
+      },
+      "2009": {
+        "acc": 0.6248,
+        "bal_acc": 0.6241,
+        "macro_f1": 0.6239
+      },
+      "baselines": {
+        "val": {
+          "majority": {
+            "acc": 0.6475,
+            "bal_acc": 0.5,
+            "macro_f1": 0.393
+          }
+        },
+        "2009": {
+          "majority": {
+            "acc": 0.5094,
+            "bal_acc": 0.5,
+            "macro_f1": 0.3375
+          }
+        }
+      },
+      "confusion_2009": [
+        [
+          2723,
+          1407
+        ],
+        [
+          1635,
+          2342
+        ]
+      ],
+      "ablation": [
+        {
+          "dropped": "Giờ",
+          "val": {
+            "acc": 0.6328,
+            "bal_acc": 0.5772,
+            "macro_f1": 0.5786
+          },
+          "2009": {
+            "acc": 0.6073,
+            "bal_acc": 0.6094,
+            "macro_f1": 0.6032
+          }
+        },
+        {
+          "dropped": "Nhiệt độ",
+          "val": {
+            "acc": 0.6125,
+            "bal_acc": 0.5723,
+            "macro_f1": 0.5727
+          },
+          "2009": {
+            "acc": 0.6248,
+            "bal_acc": 0.6241,
+            "macro_f1": 0.6239
+          }
+        },
+        {
+          "dropped": "Mùa",
+          "val": {
+            "acc": 0.5896,
+            "bal_acc": 0.5683,
+            "macro_f1": 0.5646
+          },
+          "2009": {
+            "acc": 0.5999,
+            "bal_acc": 0.6002,
+            "macro_f1": 0.5998
+          }
+        },
+        {
+          "dropped": "Khoảng cách tới nước",
+          "val": {
+            "acc": 0.5995,
+            "bal_acc": 0.5746,
+            "macro_f1": 0.5719
+          },
+          "2009": {
+            "acc": 0.6255,
+            "bal_acc": 0.6247,
+            "macro_f1": 0.6244
+          }
+        },
+        {
+          "dropped": "Cây gỗ",
+          "val": {
+            "acc": 0.6003,
+            "bal_acc": 0.5838,
+            "macro_f1": 0.5783
+          },
+          "2009": {
+            "acc": 0.6174,
+            "bal_acc": 0.6179,
+            "macro_f1": 0.6173
+          }
+        },
+        {
+          "dropped": "Chất lượng GPS",
+          "val": {
+            "acc": 0.6125,
+            "bal_acc": 0.5723,
+            "macro_f1": 0.5727
+          },
+          "2009": {
+            "acc": 0.6248,
+            "bal_acc": 0.6241,
+            "macro_f1": 0.6239
+          }
+        },
+        {
+          "dropped": "Thời gian rời nước",
+          "val": {
+            "acc": 0.6131,
+            "bal_acc": 0.5592,
+            "macro_f1": 0.56
+          },
+          "2009": {
+            "acc": 0.6246,
+            "bal_acc": 0.6241,
+            "macro_f1": 0.624
+          }
+        }
+      ],
+      "permutation_val": {
+        "hour": 0.0146,
+        "temp": 0.0,
+        "wet": 0.0412,
+        "dw_km": -0.0019,
+        "woody": 0.0091,
+        "woody_mean_300m": 0.0,
+        "temp_change_90": 0.0,
+        "temp_change_180": 0.0,
+        "woody_missing": 0.0,
+        "fix_age_min": 0.0,
+        "hours_since_water": 0.0076
+      },
+      "imputation_medians": {
+        "woody": 36.61682891845703,
+        "woody_mean_300m": 36.47742589314778,
+        "temp_change_180": 2.0,
+        "woody_missing": 0.0,
+        "hours_since_water": 14.0
+      },
+      "rules_stable": 7,
+      "rules_total": 17
+    },
+    "stay": {
+      "title": "Ở lại hay rời vùng nước?",
+      "classes": [
+        "Rời đi",
+        "Ở lại vùng nước"
+      ],
+      "params": {
+        "max_depth": 3,
+        "min_samples_leaf": 250,
+        "ccp_alpha": 0.0
+      },
+      "leaves": 8,
+      "grid": [
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 6,
+          "val_acc": 0.7725,
+          "val_bal_acc": 0.6261,
+          "val_macro_f1": 0.6335
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 6,
+          "val_acc": 0.7725,
+          "val_bal_acc": 0.6261,
+          "val_macro_f1": 0.6335
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 6,
+          "val_acc": 0.7725,
+          "val_bal_acc": 0.6261,
+          "val_macro_f1": 0.6335
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 6,
+          "val_acc": 0.7725,
+          "val_bal_acc": 0.6261,
+          "val_macro_f1": 0.6335
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 5,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 5,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 5,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 5,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 4,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 4,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 4,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 3,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 4,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 9,
+          "val_acc": 0.7302,
+          "val_bal_acc": 0.6249,
+          "val_macro_f1": 0.6165
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 9,
+          "val_acc": 0.7302,
+          "val_bal_acc": 0.6249,
+          "val_macro_f1": 0.6165
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 9,
+          "val_acc": 0.7302,
+          "val_bal_acc": 0.6249,
+          "val_macro_f1": 0.6165
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 9,
+          "val_acc": 0.7302,
+          "val_bal_acc": 0.6249,
+          "val_macro_f1": 0.6165
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 7,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 7,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 7,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 7,
+          "val_acc": 0.7503,
+          "val_bal_acc": 0.6171,
+          "val_macro_f1": 0.6184
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 4,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 13,
+          "val_acc": 0.6221,
+          "val_bal_acc": 0.6288,
+          "val_macro_f1": 0.5679
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 13,
+          "val_acc": 0.6221,
+          "val_bal_acc": 0.6288,
+          "val_macro_f1": 0.5679
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 13,
+          "val_acc": 0.6221,
+          "val_bal_acc": 0.6288,
+          "val_macro_f1": 0.5679
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 11,
+          "val_acc": 0.6221,
+          "val_bal_acc": 0.6288,
+          "val_macro_f1": 0.5679
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 10,
+          "val_acc": 0.6422,
+          "val_bal_acc": 0.621,
+          "val_macro_f1": 0.575
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 10,
+          "val_acc": 0.6422,
+          "val_bal_acc": 0.621,
+          "val_macro_f1": 0.575
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 9,
+          "val_acc": 0.6422,
+          "val_bal_acc": 0.621,
+          "val_macro_f1": 0.575
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6422,
+          "val_bal_acc": 0.621,
+          "val_macro_f1": 0.575
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 5,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0,
+          "leaves": 17,
+          "val_acc": 0.6669,
+          "val_bal_acc": 0.6354,
+          "val_macro_f1": 0.594
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0002,
+          "leaves": 17,
+          "val_acc": 0.6669,
+          "val_bal_acc": 0.6354,
+          "val_macro_f1": 0.594
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.0005,
+          "leaves": 16,
+          "val_acc": 0.6669,
+          "val_bal_acc": 0.6354,
+          "val_macro_f1": 0.594
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 250,
+          "ccp_alpha": 0.001,
+          "leaves": 13,
+          "val_acc": 0.6669,
+          "val_bal_acc": 0.6354,
+          "val_macro_f1": 0.594
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0,
+          "leaves": 11,
+          "val_acc": 0.7044,
+          "val_bal_acc": 0.6294,
+          "val_macro_f1": 0.6085
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0002,
+          "leaves": 11,
+          "val_acc": 0.7044,
+          "val_bal_acc": 0.6294,
+          "val_macro_f1": 0.6085
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.0005,
+          "leaves": 10,
+          "val_acc": 0.7044,
+          "val_bal_acc": 0.6294,
+          "val_macro_f1": 0.6085
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 500,
+          "ccp_alpha": 0.001,
+          "leaves": 8,
+          "val_acc": 0.6422,
+          "val_bal_acc": 0.621,
+          "val_macro_f1": 0.575
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0002,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.0005,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        },
+        {
+          "max_depth": 6,
+          "min_samples_leaf": 1000,
+          "ccp_alpha": 0.001,
+          "leaves": 5,
+          "val_acc": 0.6527,
+          "val_bal_acc": 0.6071,
+          "val_macro_f1": 0.5733
+        }
+      ],
+      "n": {
+        "fit": 7017,
+        "val": 5911,
+        "2009": 3327
+      },
+      "share": {
+        "fit": [
+          0.8772,
+          0.1228
+        ],
+        "val": [
+          0.7907,
+          0.2093
+        ],
+        "2009": [
+          0.8653,
+          0.1347
+        ]
+      },
+      "val": {
+        "acc": 0.7725,
+        "bal_acc": 0.6261,
+        "macro_f1": 0.6335
+      },
+      "2009": {
+        "acc": 0.7157,
+        "bal_acc": 0.6802,
+        "macro_f1": 0.5952
+      },
+      "baselines": {
+        "val": {
+          "majority": {
+            "acc": 0.7907,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4416
+          }
+        },
+        "2009": {
+          "majority": {
+            "acc": 0.8653,
+            "bal_acc": 0.5,
+            "macro_f1": 0.4639
+          }
+        }
+      },
+      "confusion_2009": [
+        [
+          2098,
+          781
+        ],
+        [
+          165,
+          283
+        ]
+      ],
+      "ablation": [
+        {
+          "dropped": "Giờ",
+          "val": {
+            "acc": 0.5947,
+            "bal_acc": 0.593,
+            "macro_f1": 0.5389
+          },
+          "2009": {
+            "acc": 0.6282,
+            "bal_acc": 0.6316,
+            "macro_f1": 0.5301
+          }
+        },
+        {
+          "dropped": "Nhiệt độ",
+          "val": {
+            "acc": 0.7725,
+            "bal_acc": 0.6261,
+            "macro_f1": 0.6335
+          },
+          "2009": {
+            "acc": 0.7157,
+            "bal_acc": 0.6802,
+            "macro_f1": 0.5952
+          }
+        },
+        {
+          "dropped": "Mùa",
+          "val": {
+            "acc": 0.7725,
+            "bal_acc": 0.6261,
+            "macro_f1": 0.6335
+          },
+          "2009": {
+            "acc": 0.8284,
+            "bal_acc": 0.6681,
+            "macro_f1": 0.6563
+          }
+        },
+        {
+          "dropped": "Khoảng cách tới nước",
+          "val": {
+            "acc": 0.7725,
+            "bal_acc": 0.6261,
+            "macro_f1": 0.6335
+          },
+          "2009": {
+            "acc": 0.7157,
+            "bal_acc": 0.6802,
+            "macro_f1": 0.5952
+          }
+        },
+        {
+          "dropped": "Cây gỗ",
+          "val": {
+            "acc": 0.7503,
+            "bal_acc": 0.6171,
+            "macro_f1": 0.6184
+          },
+          "2009": {
+            "acc": 0.7902,
+            "bal_acc": 0.6799,
+            "macro_f1": 0.6386
+          }
+        },
+        {
+          "dropped": "Chất lượng GPS",
+          "val": {
+            "acc": 0.7725,
+            "bal_acc": 0.6261,
+            "macro_f1": 0.6335
+          },
+          "2009": {
+            "acc": 0.7157,
+            "bal_acc": 0.6802,
+            "macro_f1": 0.5952
+          }
+        }
+      ],
+      "permutation_val": {
+        "hour": 0.1248,
+        "temp": 0.0,
+        "wet": 0.0,
+        "dw_km": 0.0,
+        "woody": 0.0234,
+        "woody_mean_300m": 0.0,
+        "temp_change_90": 0.0,
+        "temp_change_180": 0.0,
+        "woody_missing": 0.0,
+        "fix_age_min": 0.0
+      },
+      "imputation_medians": {
+        "woody": 36.1234245300293,
+        "woody_mean_300m": 35.37343586815726,
+        "temp_change_180": 0.0,
+        "woody_missing": 0.0
+      },
+      "rules_stable": 5,
+      "rules_total": 8
+    }
+  },
+  "speed_threshold_m": 652.5248128932435,
+  "stay_m": 150
+}
