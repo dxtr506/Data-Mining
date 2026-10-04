@@ -4,13 +4,10 @@ Dự án môn học Khai phá dữ liệu. Chúng tôi lấy dữ liệu GPS c�
 
 Dự án dựa trên bài báo: Thaker M, Gupte PR, Prins HHT, Slotow R, Vanak AT (2019). *Fine-scale tracking of ambient temperature and movement reveals shuttling behavior of elephants to water.* Front. Ecol. Evol. 7:4 (file `fevo-07-00004.pdf`).
 
-**README này viết cho cả nhóm, không cần biết lập trình.** Nó đi theo đúng trình tự của dự án: dữ liệu gốc → xử lý → đặt câu hỏi → tạo cây → kiểm chứng → đọc pattern → suy ra tập tính → ý nghĩa của kết quả → demo.
-
 ## Tóm tắt
 
 - **Dữ liệu:** 283.688 điểm GPS của 14 voi trong 2 năm (08/2007–08/2009), cộng thêm vị trí sông và hố nước, độ che phủ cây gỗ, nhiệt độ vòng cổ, mùa.
 - **Cách làm:** chia hành trình thành đoạn 90 phút, đặt **bốn câu hỏi** về hành vi (nghỉ? về nước? đi nhanh? ở lại?), mỗi câu một cây quyết định học trên 2007–2008.
-- **Kiểm chứng:** đối chiếu trên năm 2009 và so với một "đối thủ ngây thơ". Cả bốn cây đều thắng đối thủ, nhưng điểm chỉ ở mức trung bình (macro-F1 0,57 đến 0,70).
 - **Phát hiện chính:**
   - Voi **nghỉ tập trung vào khoảng 01:30–04:30 đêm**, khả năng ít di chuyển gấp khoảng 4 lần bình thường.
   - Voi sống theo **chu kỳ khoảng một ngày quanh nguồn nước**: chiều tối rời nước, ban đêm ở xa, sáng quay lại (nhiều nhất 09:00–12:00).
