@@ -742,7 +742,7 @@ Demo là trang web chạy trên máy (không cần server): `elephant_dt/web/ind
 | **Voi** | Chọn voi nào hiện trên bản đồ |
 | **Pattern** | Số liệu chứng minh pattern của cây đang chọn: biểu đồ theo giờ, mùa, cây gỗ, nhiệt độ |
 | **Luật** | Danh sách luật của cây. Bấm một luật thì bản đồ hiện mọi chỗ luật đó xảy ra năm 2009; "Xem ví dụ" nhảy tới một lần cụ thể |
-| **Cây** | Sơ đồ cây quyết định. **Nhánh vàng** là đường từ gốc tới lá cho ra pattern, lá có nhãn "Pattern"; ô **Pattern** ở góc ghi pattern bằng lời |
+| **Cây** | Sơ đồ cây quyết định. **Nhánh vàng** là đường từ gốc tới lá cho ra pattern, lá có nhãn "Pattern"; ô **Pattern** phía trên sơ đồ ghi pattern bằng lời |
 | **Kiểm tra** (phím `P`) | Chế độ kiểm tra pattern trên 2009, xem bên dưới |
 | ⛶ (phím `F`) | Toàn màn hình |
 
@@ -753,9 +753,20 @@ Phím cách chạy/dừng; mũi tên trái/phải lùi/tiến 90 phút (giữ Sh
 Dùng để **chứng minh pattern bằng một con voi cụ thể**. Màn hình chỉ còn bản đồ, thanh thời gian và một ô duy nhất:
 
 1. **Pattern** của cây đang chọn, viết bằng lời.
-2. **Độ đúng chung ở 2009**, ví dụ "31% là nghỉ (chung 7%) · 1.890 lần · 11 voi". Nghĩa là khi điều kiện của pattern xảy ra, voi thực sự ở trạng thái đó 31% số lần, so với 7% nếu chọn bừa một thời điểm.
-3. **Danh sách voi:** ba con khớp pattern nhất và một con "ít rõ nhất". Con "ít rõ nhất" được thêm vào để không chỉ khoe các ca đẹp.
+2. **Độ đúng chung ở 2009**, ví dụ: số lớn **31%** kèm câu "Trong 1.890 lần pattern xảy ra năm 2009, có 31% số lần voi nghỉ (đi dưới 75 m trong 90 phút tới). Bình thường chỉ 7%". Nghĩa của con số này ở từng cây xem ngay dưới.
+3. **Danh sách voi:** ba con khớp pattern nhất và một con "ít rõ nhất"; số % bên phải là tỉ lệ lần pattern đúng với riêng voi đó. Con "ít rõ nhất" được thêm vào để không chỉ khoe các ca đẹp.
 4. Bấm một con voi: bản đồ nhảy tới một lần pattern xảy ra, ô hiện **Dự đoán** và **Thực tế** (viền xanh nếu trùng, đỏ nếu khác). **Chạy 90 phút tới** phát đúng khoảng thời gian đó để thấy voi thật sự làm gì; **Ví dụ khác** sang ngày kế tiếp.
+
+**Con số phần trăm nghĩa là gì, ở từng cây.** "Lần" là một cửa sổ 90 phút của một con voi. Con số = trong những lần điều kiện của pattern đúng (năm 2009), tỉ lệ lần mà **điều xảy ra thật** (GPS 90 phút hoặc 3 giờ sau đó) trùng với nhãn của pattern. "Bình thường" là tỉ lệ của nhãn đó khi **không xét điều kiện nào**, trong đúng nhóm mẫu của cây.
+
+| Cây | Ví dụ | "xx%" nghĩa là | "Bình thường" là |
+| --- | --- | --- | --- |
+| 1. Nghỉ | 31% | Trong 31% số lần ở khung 00:45–03:45, voi nghỉ (đi dưới 75 m trong 90 phút tới) | 7% số cửa sổ (mọi giờ) là nghỉ |
+| 2. Về nước | 64% | Trong 64% số lần voi cách nước dưới 540 m, từ 03:45 đến 17:15, voi về tới vùng nước (trong 200 m quanh nước) trong 3 giờ tới | 24% số lần voi ở xa nước (trên 200 m) sau đó về nước trong 3 giờ |
+| 3. Tốc độ | 67% | Trong 67% số lần thỏa điều kiện của luật, voi đi chậm (dưới 653 m trong 90 phút tới) | 51% số lần voi đang đi ban ngày là đi chậm |
+| 4. Ở nước | 54% | Trong 54% số lần ở khung 00:45–03:45 với cây gỗ dày, voi ở lại (đi dưới 150 m trong 90 phút tới) | 13% số lần voi ở vùng nước là ở lại |
+
+Đừng đọc đây là "độ chính xác 64%". Nó là **độ tập trung của nhãn trong luật**: 64% so với 24% nghĩa là pattern làm khả năng "về nước" tăng khoảng 2,7 lần (chính là lift ở mục 5.3). Pattern **rõ** khi con số cao hơn nhiều so với mức bình thường; **không đáng kể** nếu chỉ ngang mức bình thường. Voi ở danh sách cũng đọc tương tự: AM105 84% nghĩa là với voi này, 84% số lần pattern xảy ra thì voi về nước.
 
 ### 10.5 Các bước xem một cây trong demo
 

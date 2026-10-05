@@ -420,10 +420,18 @@
   }
   function renderNote() {
     const n = presentNote();
-    $("treeNote").classList.toggle("left", app.task === "water" || app.task === "speed");
     $("treeNote").innerHTML = `<div class="tn-title">Pattern</div><div class="tn-main">${n.main}</div><div class="tn-hint">${n.hint}</div>
-      <div class="tn-path"><i></i>Nhánh tô vàng: đường từ gốc tới lá cho ra pattern</div>`;
+      <div class="tn-path"><i></i>Nhánh vàng trên cây: đường từ gốc tới lá cho ra pattern</div>`;
   }
+  // Mô tả đầy đủ của từng nhãn, dùng để giải thích các con số phần trăm
+  const SPEED_M = () => fmtInt(Math.round(TK.speed_threshold_m));
+  const CLS_DESC = {
+    rest: () => ["nghỉ (đi dưới 75 m trong 90 phút tới)", "di chuyển (đi từ 75 m trở lên trong 90 phút tới)"],
+    water: () => ["chưa về tới vùng nước trong 3 giờ tới", "về tới vùng nước (trong 200 m quanh nước) trong 3 giờ tới"],
+    speed: () => [`đi chậm (dưới ${SPEED_M()} m trong 90 phút tới)`, `đi nhanh (trên ${SPEED_M()} m trong 90 phút tới)`],
+    stay: () => [`rời đi (đi từ ${TK.stay_m} m trở lên trong 90 phút tới)`, `ở lại (đi dưới ${TK.stay_m} m trong 90 phút tới)`],
+  };
+  const POP_DESC = { rest: "mọi thời điểm", water: "mọi lần voi đang ở xa nước", speed: "mọi lần voi đang đi ban ngày", stay: "mọi lần voi đang ở vùng nước" };
   // Mức chung của một nhãn = tỉ lệ của nhãn đó trong toàn bộ dữ liệu học (2007–2008)
   const baseShare = (k, task = app.task) => { const r = MODEL(task).nodes[0]; return r.counts[k] / r.n; };
   const pc0 = (v) => fmtPct(v, 0);
@@ -449,7 +457,7 @@
   function evidence(r) {
     const T = TASK();
     return `<div class="rstats">
-      <span><b>${pc0(r.conf)}</b> là "${T.classes[r.pred].toLowerCase()}" <span class="muted">(chung ${pc0(baseShare(r.pred))})</span></span>
+      <span title="Trong các mẫu học thuộc luật này, ${pc0(r.conf)} là: voi ${CLS_DESC[app.task]()[r.pred]}. Mức chung (không xét điều kiện nào) là ${pc0(baseShare(r.pred))}."><b>${pc0(r.conf)}</b> là "${T.classes[r.pred].toLowerCase()}" <span class="muted">(chung ${pc0(baseShare(r.pred))})</span></span>
       <span title="Số mẫu học (2007–2008) và số cá thể">${fmtInt(r.n)} mẫu · ${r.n_ids} voi</span>
       <span title="Số voi (có đủ mẫu) cho thấy cùng xu hướng">${r.ids_lift_gt1}/${r.ids_eval} voi cùng xu hướng</span>
       ${r.stable ? '<span class="ok-tag" title="Quy luật vẫn đúng ở tập kiểm tra (2008, 2009) và ở đa số voi">đáng tin</span>'
@@ -755,18 +763,10 @@
   }
   function renderRules() {
     const M = MODEL(), T = TASK();
-    const r0 = M.rules.filter((q) => q.stable).sort((a, b) => b.conf / baseShare(b.pred) - a.conf / baseShare(a.pred))[0] || M.rules[0];
-    const ex = { pct: pc0(r0.conf), cls: `"${T.classes[r0.pred].toLowerCase()}"`, base: pc0(baseShare(r0.pred)) };
     $("drawerTitle").textContent = `Luật · ${T.name.replace("?", "")}`;
     const sorted = M.rules.slice().sort((a, b) => (b.stable - a.stable) || (b.lift * Math.sqrt(b.support) - a.lift * Math.sqrt(a.support)));
     const list = rulesAll ? sorted : sorted.slice(0, 10);
     $("drawerBody").innerHTML = `
-      <div class="explain">
-        <p><b>Mỗi luật là một nhánh của cây.</b> Khi mọi điều kiện (ô xám) cùng đúng, thẻ cho biết nhãn nào chiếm nhiều nhất trong nhánh đó, đại diện cho ${T.horizon}.</p>
-        <p><b>Ví dụ đọc một thẻ:</b> "${ex.pct} là ${ex.cls} (chung ${ex.base})" nghĩa là trong dữ liệu 2007–2008, khi có điều kiện của thẻ thì ${ex.pct} số lần voi ở nhãn này, trong khi toàn bộ dữ liệu chỉ có ${ex.base}. Phần còn lại thuộc nhãn kia. Chênh càng lớn thì điều kiện càng liên quan tới nhãn.</p>
-        <p><b>đáng tin</b> = quy luật vẫn đúng ở tập kiểm tra (2008, 2009) và ở đa số voi. <b>gần mức chung</b> = nhánh không khác gì mức chung, không nên rút ra điều gì.</p>
-        <p><b>Bấm luật</b> → bản đồ hiện huy hiệu ở mọi chỗ luật được dùng năm 2009. <b>Xem ví dụ</b> → nhảy tới một lần cụ thể.</p>
-      </div>
       ${list.map((r) => {
         const on = app.leaf === r.leaf, n = on ? leafUses(r.leaf).filter((u) => u[app.task].pred >= 0).length : 0;
         return `<div class="rule ${on ? "on" : ""} ${r.stable ? "" : "is-weak"}" data-leaf="${r.leaf}">
@@ -909,10 +909,9 @@
   }
   function renderCheck() {
     const T = TASK(), d = checkData(), nt = presentNote();
-    const cls = T.classes[d.spec.cls].toLowerCase().replace(/\s*\(.*\)/, "");
     const row = (b, tag) => `<button class="ck-ele ${chk.sel === b.id ? "on" : ""}" data-ele="${b.id}">
       <span class="ele-ico">${elephantSvg(chk.sel === b.id ? css("--accent") : "#ffffff", false)}</span>
-      <b>${b.id}</b>${tag ? `<span class="ck-tag">${tag}</span>` : ""}<span class="ck-rate">${pc0(b.rate)} <span class="muted">${cls}</span></span></button>`;
+      <b>${b.id}</b>${tag ? `<span class="ck-tag">${tag}</span>` : ""}<span class="ck-rate">${pc0(b.rate)}</span></button>`;
     let ex = "";
     if (chk.sel && d.by[chk.sel]) {
       const list = examplesOf(d, chk.sel), w = list[chk.k];
@@ -928,8 +927,12 @@
       <div class="ck-title">Pattern <span class="muted">· kiểm tra trên năm 2009</span></div>
       <div class="ck-main">${nt.main}</div>
       <div class="ck-hint">${nt.hint}</div>
-      <div class="ck-stat"><b>${pc0(d.rate)}</b> là "${cls}" <span class="muted">(chung ${pc0(d.base)})</span> · ${fmtInt(d.n)} lần · ${d.nEle} voi</div>
-      <div class="ck-sec">Chọn một con voi để xem</div>
+      <div class="ck-stat">
+        <div class="ck-big">${pc0(d.rate)}</div>
+        <div class="ck-desc">Trong ${fmtInt(d.n)} lần pattern xảy ra năm 2009, có <b>${pc0(d.rate)}</b> số lần voi <b>${CLS_DESC[app.task]()[d.spec.cls]}</b>.</div>
+        <div class="ck-base">Bình thường (${POP_DESC[app.task]}) chỉ ${pc0(d.base)}. Càng cao hơn mức này thì pattern càng rõ.</div>
+      </div>
+      <div class="ck-sec">Chọn một con voi (% = số lần pattern đúng với riêng voi đó)</div>
       <div class="ck-list">${d.pick.map((b) => row(b)).join("")}${d.worst ? row(d.worst, "ít rõ nhất") : ""}</div>
       ${ex || '<div class="ck-empty">Bấm một con voi: bản đồ sẽ nhảy tới một lần pattern xảy ra.</div>'}`;
     $("check").querySelectorAll("[data-ele]").forEach((b) => b.addEventListener("click", () => showCheckExample(b.dataset.ele, 0)));

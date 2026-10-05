@@ -12,7 +12,7 @@
   --axis: #4a4945;
   --border: rgba(255, 255, 255, 0.12);
   --accent: #3987e5;
-  --pattern: #f5b301;
+  --pattern: #d9a441;
   --accent-ink: #ffffff;
   --map-bg: #0d0d0d;
   /* Trạng thái: 3 slot đầu của bảng màu phân loại (đã kiểm định cho mọi cặp, nền tối) */
@@ -285,12 +285,6 @@ details summary { cursor: pointer; color: var(--ink-2); font-weight: 600; font-s
 .ele-meta { font-size: 11px; font-variant-numeric: tabular-nums; }
 
 /* ---------- Luật ---------- */
-.explain {
-  background: var(--surface-2); border-radius: 10px; padding: 10px 12px; color: var(--ink-2); font-size: 12px;
-}
-.explain p { margin: 0 0 6px; }
-.explain p:last-child { margin: 0; }
-.explain b { color: var(--ink); }
 .rstats { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 8px; color: var(--ink-2); font-size: 12px; font-variant-numeric: tabular-nums; }
 .rstats b { color: var(--ink); }
 .ractions { display: flex; align-items: center; gap: 10px; margin-top: 10px; flex-wrap: wrap; }
@@ -362,7 +356,10 @@ body.present .tool-sep { display: none !important; }
 .ck-title .muted { text-transform: none; letter-spacing: 0; font-weight: 400; }
 .ck-main { font-size: 18px; font-weight: 600; margin-top: 4px; }
 .ck-hint { font-size: 14px; color: var(--ink-2); font-style: italic; margin-top: 3px; }
-.ck-stat { font-size: 14px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.ck-stat { margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.ck-big { font-size: 28px; font-weight: 700; line-height: 1.1; color: var(--pattern); font-variant-numeric: tabular-nums; }
+.ck-desc { font-size: 14px; margin-top: 3px; }
+.ck-base { font-size: 12px; margin-top: 5px; color: var(--ink-2); }
 .ck-sec { font-size: 12px; font-weight: 600; color: var(--ink-2); margin: 14px 0 6px; }
 .ck-list { display: grid; gap: 4px; }
 .ck-ele { display: flex; align-items: center; gap: 8px; width: 100%; padding: 6px 8px; border-radius: 9px; cursor: pointer;
@@ -395,18 +392,12 @@ body.hide-ui .ui:not(.timeline), body.hide-ui .maplibregl-ctrl-bottom-right { di
 .hint { color: var(--ink-2); font-style: italic; font-size: 12px; }
 
 #treeModal .box { position: relative; }
-.tree-note { position: absolute; right: 22px; bottom: 18px; z-index: 5; max-width: 340px; padding: 10px 14px;
-  background: var(--glass); backdrop-filter: blur(6px); border: 1px solid var(--accent); border-radius: 12px; box-shadow: var(--shadow); }
-.tree-note .tn-title { font-size: 11px; color: var(--accent); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
-.tree-note .tn-main { font-size: 15px; font-weight: 600; margin-top: 3px; color: var(--ink); }
-.tree-note .tn-path { display: flex; align-items: center; gap: 6px; margin-top: 8px; padding-top: 7px; border-top: 1px solid var(--border); font-size: 12px; color: var(--ink-2); }
-.tree-note .tn-path i { flex: none; width: 18px; height: 4px; border-radius: 2px; background: var(--pattern); }
-.tree-note .tn-hint { font-size: 13px; margin-top: 3px; color: var(--ink-2); font-style: italic; }
-body.present .tree-note .tn-main { font-size: 18px; }
-
-/* Cây 2 và 3 có nhiều lá: đặt ô Pattern ở góc trên bên trái để không che cây */
-.tree-note.left { right: auto; left: 22px; top: 70px; bottom: auto; max-width: 290px; padding: 8px 12px; }
-.tree-note.left .tn-main { font-size: 14px; }
-.tree-note.left .tn-hint { font-size: 12px; }
+.tree-note { flex: none; margin: 0 22px 8px; padding: 8px 14px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 18px;
+  background: var(--surface-2); border: 1px solid var(--border); border-left: 3px solid var(--pattern); border-radius: 10px; }
+.tree-note .tn-title { font-size: 11px; color: var(--pattern); font-weight: 600; text-transform: uppercase; letter-spacing: .04em; }
+.tree-note .tn-main { flex: 1 1 360px; font-size: 15px; font-weight: 600; color: var(--ink); }
+.tree-note .tn-hint { font-size: 13px; color: var(--ink-2); font-style: italic; }
+.tree-note .tn-path { flex-basis: 100%; display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink-2); }
+.tree-note .tn-path i { flex: none; width: 18px; height: 3px; border-radius: 2px; background: var(--pattern); }
 
 .maplibregl-ctrl-attrib { font-size: 10px; }

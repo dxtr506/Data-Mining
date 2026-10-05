@@ -201,10 +201,10 @@
         const x1 = X(n.id) + boxW, y1 = Yc(n.id), x2 = X(cid), y2 = Yc(cid);
         const on = hl.has(n.id) && hl.has(cid), pon = !!pat && pat.has(n.id) && pat.has(cid);
         const mx = x1 + Math.min(28, (x2 - x1) / 2);
-        const eg = svgEl("g", { opacity: pat && !pon ? 0.4 : 1 }, svg);
+        const eg = svgEl("g", { opacity: 1 }, svg);
         svgEl("path", {
           d: `M${x1},${y1}C${mx},${y1} ${mx},${y2} ${x2 - (L ? 50 : 30)},${y2}L${x2},${y2}`,
-          fill: "none", stroke: pon ? patColor : on ? accent : axis, "stroke-width": pon ? 4.5 : on ? 2.5 : 1.25,
+          fill: "none", stroke: pon ? patColor : on ? accent : axis, "stroke-width": pon ? 3 : on ? 2.5 : 1.25,
           "stroke-linecap": "round",
         }, eg);
         const t = svgEl("text", {
@@ -220,10 +220,10 @@
     for (const n of nodes) {
       const x = X(n.id), yc = Yc(n.id);
       const pon = !!pat && pat.has(n.id);
-      const g = svgEl("g", { style: n.leaf ? "cursor:pointer" : "", opacity: pat && !pon ? 0.5 : 1 }, svg);
+      const g = svgEl("g", { style: n.leaf ? "cursor:pointer" : "", opacity: 1 }, svg);
       const on = hl.has(n.id);
       if (!n.leaf) {
-        svgEl("rect", { x, y: yc - boxH / 2, width: boxW, height: boxH, rx: 6, fill: surface2, stroke: pon ? patColor : on ? accent : border, "stroke-width": pon ? 3 : on ? 2 : 1 }, g);
+        svgEl("rect", { x, y: yc - boxH / 2, width: boxW, height: boxH, rx: 6, fill: surface2, stroke: pon ? patColor : on ? accent : border, "stroke-width": pon ? 2 : on ? 2 : 1 }, g);
         const lines = opts.featureLines?.[n.feature] || wrapText(FEAT_SHORT[n.feature] || n.feature, 24);
         textLines(g, lines, x + boxW / 2, yc + 4 - (lines.length - 1) * 7.5, { "text-anchor": "middle" });
         svgEl("title", {}, g).textContent = opts.featureDescriptions?.[n.feature] || FEAT_SHORT[n.feature] || n.feature;
@@ -231,7 +231,7 @@
         const sel = opts.selectedLeaf === n.id;
         const h = rowH - 6;
         const [line1, line2] = opts.leafText(n);
-        svgEl("rect", { x, y: yc - h / 2, width: leafW, height: h, rx: 6, fill: surface2, stroke: pon ? patColor : sel || on ? accent : border, "stroke-width": pon ? 4 : sel || on ? 2 : 1 }, g);
+        svgEl("rect", { x, y: yc - h / 2, width: leafW, height: h, rx: 6, fill: surface2, stroke: pon ? patColor : sel || on ? accent : border, "stroke-width": pon ? 2.5 : sel || on ? 2 : 1 }, g);
         if (pon) {
           const tag = svgEl("g", {}, g);
           svgEl("rect", { x: x + leafW + 8, y: yc - 10, width: 62, height: 20, rx: 10, fill: patColor }, tag);
